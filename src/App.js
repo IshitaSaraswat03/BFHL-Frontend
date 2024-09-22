@@ -21,7 +21,7 @@ const App = () => {
     try {
       setError('');
       const jsonData = JSON.parse(input);
-      const res = await axios.post('https://bajaj-finserv-health-s7mb.onrender.com-/bfhl', jsonData); // Adjust the URL if needed
+      const res = await axios.post('https://backend-kh22zi36k-aditi-bajajs-projects.vercel.app/bfhl', jsonData); // Adjust the URL if needed
       setResponse(res.data);
     } catch (error) {
       setError('Invalid JSON input or server error');
